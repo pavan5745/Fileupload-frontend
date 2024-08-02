@@ -1,0 +1,79 @@
+/* Listing.css */
+
+.container {
+  padding: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd; /* Border around each item */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow the border */
+  padding: 10px;
+  background-color: #fff; /* Background color for items */
+}
+
+.col-4 img {
+  width: 100%; /* Full width of the column */
+  height: 200px; /* Height for the image to dominate */
+  object-fit: cover; /* Ensure images cover the container without distortion */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.media-item-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width of the column */
+  margin-top: 10px;
+}
+
+.media-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.media-item h2 {
+  margin: 0;
+  font-size: 0.8em; /* Reduced font size for title */
+  flex: 1; /* Allow title to take remaining space */
+}
+
+.media-item .buttons {
+  display: flex;
+  gap: 12px; /* Space between buttons */
+}
+
+.media-item button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* Font size for buttons */
+  padding: 8px 16px; /* Padding for buttons */
+  margin: 100px;
+  border: 1px solid #ddd; /* Border around buttons */
+  border-radius: 40px; /* Rounded corners for buttons */
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Text color */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.media-item button:hover {
+  background-color: #e0e0e0; /* Darker background on hover */
+  border-color: #ccc; /* Change border color on hover */
+}
+
+.media-item button:focus {
+  outline: none;
+}
